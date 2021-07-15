@@ -150,6 +150,7 @@ export const getColorForJurisdiction = (jurisdiction) => {
   throw new Error("no color for provided jurisdiction: " + jurisdiction)
 }
 
+// keep in line with slugify in utils.js
 export const getSlug = (text) => {
   return text
     .toString()

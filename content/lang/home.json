@@ -57,6 +57,9 @@
       }
     ]
   },
+  "timeSeries": {
+    "title": "Showing ${metric} among ${group} in ${locations}"
+  },
   "sponsors": {
     "title": "Our generous supporters include:",
     "logos": [

@@ -13,6 +13,7 @@ import {
   HomeMapTooltip,
   HomeTable,
   VaccineTable,
+  FacilitiesTimeSeries,
   HomeSponsors,
 } from "components/home";
 import homeContent from "../lang/home.json";
@@ -32,6 +33,7 @@ import homeContent from "../lang/home.json";
   note={homeContent.vaccineTable.note}
   flagNote={homeContent.vaccineTable.flag_note}
 />
+<FacilitiesTimeSeries title={homeContent.timeSeries.title} />
 <HomeSponsors
   title={homeContent.sponsors.title}
   logos={homeContent.sponsors.logos}

@@ -38,6 +38,10 @@
     },
     { "key": "empty_legend_message", "value": "no data available" },
     { "key": "scroll_up", "value": "Back to top" },
+    {
+      "key": "time_series_facility_select",
+      "value": "Add state facilities, statewide totals, BOP (Federal Bureau of Prisons), or U.S. Immigrations and Customs Enforcement (ICE) facilities to compare trends."
+    },
     { "key": "notes_dialog_title", "value": "Data Notes" },
     { "key": "notes_open", "value": "Open data notes" }
   ]

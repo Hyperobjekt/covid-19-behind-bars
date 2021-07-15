@@ -20,15 +20,18 @@ See the [hyperobjekt core starter](https://gatsby-starter-hyperobjekt.netlify.ap
 - Custom page templates are in `/src/templates`
 - Website theme definition is in `/src/gatsby-theme-hypercore/theme.js`
 - Page layout overrides (header, footer, etc.) are shadowed in `/src/gatsby-theme-hypersite`
+- data fetching and preprocessing is in `/scripts`
 
 ## Data Sources
 
-Data is pulled from a many sources:
+Data is pulled from many sources:
 
 - [UCLA Law COVID-19 Behind Bars Data Repo](https://github.com/uclalawcovid19behindbars/data)
 - [UCLA Law COVID-19 Behind Bars Google Sheet](https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=1641553906)
+- [UCLA DOC Transparency Scorecard](https://docs.google.com/spreadsheets/d/1fHhRAjwYGVmgoHLUENvcYffHDjEQnpp7Rwt9tLeX_Xk/edit?gid=696812429)
+- [UCLA Time Series Data](http://104.131.72.50:3838/scraper_data/summary_data/scraped_time_series.csv)
 
-Data fetching and processing happens on build in `gatsby-node.js`, which calls data fetchers and parsers located in `/scripts/`
+Data fetching and processing happens on build in `gatsby-node.js`, with the exception of time series data, which is fetched and processed in the loadTimeSeriesData.js prebuild script. For local development, run `yarn prebuild` to generate the `/static/data/` CSVs necessary for the time series visuals.
 
 ## Publishing the website
 

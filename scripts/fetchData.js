@@ -12,15 +12,7 @@ const {
   roughMatch,
 } = require(`./parseData.js`);
 const US_STATES = require("../data/us_states.json");
-
-async function getData(url, parser, options = {}) {
-  let data = await fetchCsv(url, parser);
-  // remove descriptive rows following the top identifier row
-  if (options.dropRows) {
-    data = data.slice(options.dropRows);
-  }
-  return data;
-}
+const { getData } = require("./utils.js");
 
 const dataBranch = process.env.DATA_BRANCH || "master";
 
@@ -45,7 +37,8 @@ exports.getVaccines = () => getData(vaccinesCsv, parseVaccine);
  * sheet has hidden top row with stable, machine-readable names
  */
 
-const scorecard = `https://docs.google.com/spreadsheets/d/1fHhRAjwYGVmgoHLUENvcYffHDjEQnpp7Rwt9tLeX_Xk/export?gid=687147875&format=csv`;
+const scorecard = `https://docs.google.com/spreadsheets/d/1fHhRAjwYGVmgoHLUENvcYffHDjEQnpp7Rwt9tLeX_Xk/export?gid=696812429&format=csv`;
+// const scorecard = `https://docs.google.com/spreadsheets/d/1fHhRAjwYGVmgoHLUENvcYffHDjEQnpp7Rwt9tLeX_Xk/export?gid=687147875&format=csv`;
 
 const scorecardMap = {
   state: ["state", "string", exactMatch],

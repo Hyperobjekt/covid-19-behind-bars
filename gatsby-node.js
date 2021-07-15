@@ -73,6 +73,7 @@ exports.sourceNodes = async (params) => {
     // ["Fundraisers", getFundraisers],
     ["Resources", getResources],
   ];
+
   for (let i = 0; i < nodes.length; i++) {
     await createSourceNodes(nodes[i][0], nodes[i][1], params);
   }

@@ -11,6 +11,8 @@
     "@hyperobjekt/svg-maps": "^1.0.11",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.58",
+    "@visx/xychart": "^1.12.0",
     "d3-array": "^2.8.0",
     "d3-color": "^2.0.0",
     "d3-fetch": "^2.0.0",
@@ -52,6 +54,7 @@
   ],
   "license": "MIT",
   "scripts": {
+    "prebuild": "node scripts/loadTimeSeriesData.js",
     "build": "gatsby build",
     "develop": "gatsby develop -H 0.0.0.0",
     "clean": "gatsby clean",

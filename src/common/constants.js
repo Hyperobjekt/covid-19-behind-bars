@@ -70,3 +70,20 @@ export const JURISDICTION_GRADIENTS = [
   "url(#g4)",
   "url(#g5)",
 ];
+
+export const TIME_SERIES_COLORS = [
+  "#D7790F",
+  "#82CAA4",
+  "#4C6788",
+  "#84816F",
+  "#71A9C9",
+  "#AE91A8",
+  "#DED6DC",
+  "#B4C551",
+  "#7E55D4",
+  "#A21916",
+  "#BC73AE",
+  "#567EBA",
+  "#FFD540",
+  "#CF5833",
+];
