@@ -176,7 +176,7 @@ const VaccineTable = ({
         },
       },
     ],
-    [classes.jurisdictionLink]
+    [classes.jurisdictionLink, columnHeaders, flagNote]
   );
 
   return (
@@ -189,7 +189,7 @@ const VaccineTable = ({
             dangerouslySetInnerHTML={{ __html: subtitle }}
             className={classes.body}
           />
-          <NotesModal notes={note} />
+          <NotesModal disableNumbering notes={note} />
         </div>
         <div className={classes.tableWrapper}>
           <DefaultTable

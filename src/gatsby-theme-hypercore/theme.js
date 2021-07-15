@@ -237,6 +237,9 @@ const CovidTheme = () => {
           color: theme.palette.text.tertiary,
           fontSize: theme.typography.pxToRem(12),
           lineHeight: 1.43,
+          "& a:not([class])": {
+            color: theme.palette.text.tertiary,
+          },
         },
       },
       MuiLink: {

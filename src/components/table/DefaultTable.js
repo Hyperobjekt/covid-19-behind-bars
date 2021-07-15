@@ -1,18 +1,7 @@
 import React from "react";
-import { Box, Grid, Typography, withStyles } from "@material-ui/core";
+import { Box, Grid, Typography } from "@material-ui/core";
 import Table from "./Table";
 import Modal from "../modal/Modal";
-import { Palette } from "@material-ui/icons";
-
-const styles = (theme) => ({
-  table: {
-    // margin: theme.spacing(0, -3),
-    // width: `calc(100% + ${theme.spacing(6)})`,
-    // "& .MuiTablePagination-input, & .MuiTablePagination-spacer + .MuiTablePagination-caption": {
-    //   display: "none",
-    // },
-  },
-});
 
 const ModalRowContent = ({ data }) => {
   if (!data || !data.cells) return null;
@@ -86,7 +75,7 @@ const DefaultTable = ({
         setSortCol(sortBy);
       }
     },
-    [sortCol, sortDesc]
+    [sortCol, sortDesc, preventReverseSort]
   );
 
   const changePageHandler = React.useCallback((idx) => {
@@ -130,4 +119,4 @@ const DefaultTable = ({
 
 DefaultTable.propTypes = {};
 
-export default withStyles(styles)(DefaultTable);
+export default DefaultTable;

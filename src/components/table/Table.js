@@ -89,6 +89,10 @@ const styles = (theme) => ({
         display: "block",
       },
     },
+    // darker underline on links in tables
+    "& .MuiLink-underlineHover": {
+      textDecorationColor: `rgba(85, 85, 38, 0.3)`,
+    },
   },
   toolbar: {},
 });

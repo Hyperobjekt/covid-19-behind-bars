@@ -1,6 +1,6 @@
 import React from "react";
 import { Table } from "../table";
-import { Typography, withStyles } from "@material-ui/core";
+import { Typography, withStyles, Tooltip } from "@material-ui/core";
 import { useFacilitiesData, useOptionsStore } from "../../common/hooks";
 import { Block } from "@hyperobjekt/material-ui-website";
 import slugify from "slugify";
@@ -15,6 +15,7 @@ import clsx from "clsx";
 import { Link } from "gatsby-theme-material-ui";
 import NotesModal from "../NotesModal";
 import { countFormatter, rateFormatter, rateSorter } from "../table/utils";
+const MAX_FACILITY_LENGTH = 24;
 
 const styles = (theme) => ({
   root: {
@@ -115,15 +116,28 @@ const HomeTable = ({
           entity = "Federal Bureau of Prisons";
           link = "/federal";
         }
+        const facility = (
+          <Typography
+            title={prop.value}
+            className={classes.name}
+            variant="body1"
+          >
+            {prop.value.length > MAX_FACILITY_LENGTH
+              ? prop.value.substring(0, MAX_FACILITY_LENGTH) + "..."
+              : prop.value}
+          </Typography>
+        );
+        const rowName =
+          prop.value.length > MAX_FACILITY_LENGTH ? (
+            <Tooltip title={prop.value} arrow placement="top">
+              {facility}
+            </Tooltip>
+          ) : (
+            facility
+          );
         return (
           <>
-            <Typography
-              title={prop.value}
-              className={classes.name}
-              variant="body1"
-            >
-              {prop.value}
-            </Typography>
+            {rowName}
             <Typography variant="body2" color="textSecondary">
               <Link to={link} className={classes.state}>
                 {entity}

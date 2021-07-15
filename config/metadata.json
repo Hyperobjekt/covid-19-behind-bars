@@ -254,6 +254,11 @@
         {
           "name": "Reports",
           "link": "/reports"
+        },
+        {
+          "name": "Health is Justice",
+          "link": "https://healthisjustice.org/litigation-hub/",
+          "type": "external"
         }
       ]
     },
@@ -267,7 +272,7 @@
           "link": "/about"
         },
         {
-          "name": "Project Team",
+          "name": "Our team",
           "link": "/project-team"
         },
         {

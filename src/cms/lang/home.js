@@ -25,7 +25,7 @@ const home = {
           label: "Flag Notes",
           name: "flag_note",
           widget: "list",
-          summary: "{{fields.key}}",
+          summary: "{{fields.entity}}",
           fields: [
             makeStringField("entity", { label: "Entry" }),
             makeStringField("text"),

@@ -86,5 +86,7 @@ module.exports = {
         offset: -100,
       },
     },
+    // clear the service worker that was loaded in previous builds
+    `gatsby-plugin-remove-serviceworker`,
   ],
 };

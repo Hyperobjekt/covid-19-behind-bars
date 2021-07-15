@@ -1,0 +1,422 @@
+{
+  "id": "project-team",
+  "teams": [
+    {
+      "name": "Leadership",
+      "members": [
+        {
+          "name": "Sharon Dolovich",
+          "url": "https://law.ucla.edu/faculty/faculty-profiles/sharon-dolovich",
+          "roles": [
+            "Project Director",
+            "Professor of Law at UCLA School of Law",
+            "Director of UCLA Prison Law & Policy Program"
+          ]
+        },
+        {
+          "name": "Aaron Littman",
+          "url": "https://law.ucla.edu/faculty/faculty-profiles/aaron-littman",
+          "roles": [
+            "Project Deputy Director",
+            "Binder Clinical Teaching Fellow at UCLA School of Law"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Staff",
+      "members": [
+        { "name": "Liz DeWolf", "roles": ["Senior Program Manager"] },
+        { "name": "Michael Everett", "roles": ["Data Science Fellow"] },
+        { "name": "Danielle Flores", "roles": ["Project Coordinator"] },
+        { "name": "Hope Johnson", "roles": ["Data Science Fellow"] },
+        { "name": "Amanda Klonsky", "roles": ["Research and Policy Fellow"] },
+        { "name": "Joshua Manson", "roles": ["Communications Manager"] },
+        { "name": "Neal Marquez", "roles": ["Data Science Fellow"] },
+        { "name": "Erika Tyagi", "roles": ["Data Science Fellow"] }
+      ]
+    },
+    {
+      "name": "Former Staff",
+      "members": [
+        { "name": "Chase Hommeyer", "roles": ["Data Science Fellow"] },
+        { "name": "Hunter Nagai", "roles": ["Project Coordinator"] },
+        { "name": "Kalind Parish", "roles": ["Data Science Fellow"] },
+        { "name": "Poornima Rajeshwar", "roles": ["Policy Fellow"] },
+        { "name": "Victoria Rossi", "roles": ["Project Investigator"] }
+      ]
+    },
+    {
+      "name": "Advisors",
+      "members": [{ "name": "Maddy deLone" }, { "name": "Ben Nyblade" }]
+    },
+    {
+      "name": "Research Assistants",
+      "members": [
+        { "name": "Jack Eyers" },
+        { "name": "Keegan Hawkins" },
+        { "name": "Cooper Mayne" },
+        { "name": "Danielle Sze" }
+      ]
+    },
+    {
+      "name": "Data Scientists & Data Analysts",
+      "members": [
+        { "name": "Grace DiLaura", "roles": ["Former Data Lead"] },
+        { "name": "Wilner Alvarez" },
+        { "name": "William Bellamy" },
+        { "name": "Cassidy Bennett" },
+        { "name": "Hope Bentley" },
+        { "name": "Jenna Bernard" },
+        { "name": "Zerxes Bhadha" },
+        { "name": "Ashleen Blaettler" },
+        { "name": "John Bica" },
+        { "name": "Beth Bishop" },
+        { "name": "Adam Brandy" },
+        { "name": "Madeline Brout" },
+        { "name": "Michaelle Burbank" },
+        { "name": "Monique Cardona" },
+        { "name": "Dhruv Chakraborty" },
+        { "name": "Meichen Chen" },
+        { "name": "Yixin Chen" },
+        { "name": "Jessica Copenhaver" },
+        { "name": "Olivia Diab" },
+        { "name": "Peter Dickson" },
+        { "name": "Isaac Dienstag" },
+        { "name": "Samantha Flattery" },
+        { "name": "Rashi Garg" },
+        { "name": "Morgan Elizabeth Godvin" },
+        { "name": "Alison Gordon" },
+        { "name": "Kristen Goss" },
+        { "name": "Doreen Govari" },
+        { "name": "Linda He" },
+        { "name": "Arjun Kapallur" },
+        { "name": "Laura Kirrin" },
+        { "name": "Sarah Kosic" },
+        { "name": "Alix Lacoste" },
+        { "name": "Amanda Lamb" },
+        { "name": "Angel Lee" },
+        { "name": "Erin Lee" },
+        { "name": "Steve Levick" },
+        { "name": "Belinda Li" },
+        { "name": "Tony Li" },
+        { "name": "Charlie Liebenberg" },
+        { "name": "Cooper Mayne" },
+        { "name": "Catherine Matsuda" },
+        { "name": "Emmalee McCarthy" },
+        { "name": "Amaris Monte" },
+        { "name": "Heather Monte" },
+        { "name": "Andrew Morgenstern" },
+        { "name": "Amy Munro" },
+        { "name": "Samantha Noor" },
+        { "name": "Anna Norkett" },
+        { "name": "Saee Paliwal" },
+        { "name": "Harshini Pyata" },
+        { "name": "Monse Reyes" },
+        { "name": "Dorah Rosen" },
+        { "name": "Patrice Ruane" },
+        { "name": "Raphael San Andres" },
+        { "name": "Kevin Shang" },
+        { "name": "Heaven Strouse" },
+        { "name": "Rachel Stine-Gil" },
+        { "name": "Dara Tan" },
+        { "name": "Kayla Teng" },
+        { "name": "Aiden Tepper" },
+        { "name": "Ashwin Thomas" },
+        { "name": "Sarah True" },
+        { "name": "Sruthi Veeragandham" },
+        { "name": "Adam Visokay" },
+        { "name": "Evie Zavidow" },
+        { "name": "Julie Zalinski" },
+        { "name": "Kevin Zhao" }
+      ]
+    },
+    {
+      "name": "Policy Analysts",
+      "members": [
+        { "name": "Grace DiLaura", "roles": ["Policy Lead"] },
+        { "name": "Ilina Bhor" },
+        { "name": "Ciara Brewer" },
+        { "name": "Mercedes Davis" },
+        { "name": "Kim De La Cruz" },
+        { "name": "D. Korbin Felder" },
+        { "name": "Morgan Elizabeth Godvin" },
+        { "name": "Jason Ho" },
+        { "name": "Matt Kellner" },
+        { "name": "Charlie Kelsey" },
+        { "name": "Amanda Lamb" },
+        { "name": "Kevin Lee" },
+        { "name": "Tony Li" },
+        { "name": "Lyndon Liang" },
+        { "name": "Gabrielle Mazero" },
+        { "name": "Eireann O'Grady" },
+        { "name": "Ellie Pearce" },
+        { "name": "Harshini Pyata" },
+        { "name": "Katy Ramos" },
+        { "name": "Abraham Rinck" },
+        { "name": "Dawy Rkasnuam" },
+        { "name": "Kathyrn Rosenfeld" },
+        { "name": "Olivia Shields" },
+        { "name": "Chloe Smith" },
+        { "name": "Shelby Weaver" },
+        { "name": "Kennedy Willis" },
+        { "name": "Richard Young" }
+      ]
+    },
+    {
+      "name": "Compassionate Release Researchers",
+      "members": [
+        { "name": "Constance Chan" },
+        { "name": "Jenna Conwisar" },
+        { "name": "Maria Demarco" },
+        { "name": "Amanda Dworkin" },
+        { "name": "Nicholas Dyess" },
+        { "name": "Jack Eyers" },
+        { "name": "Isabelle Geczky" },
+        { "name": "Ilse Gomez" },
+        { "name": "Dhruva Krishna" },
+        { "name": "Jacob Kwitek" },
+        { "name": "Keith Lawton" },
+        { "name": "Rachel Levin" },
+        { "name": "Sunny Perkins" },
+        { "name": "Rachel Ryu" },
+        { "name": "Noah Simon" },
+        { "name": "Jana Sun" },
+        { "name": "Ali Stack" }
+      ]
+    },
+    {
+      "name": "Vaccine Researchers",
+      "members": [
+        { "name": "Alison Angoff" },
+        { "name": "Ellie Baines" },
+        { "name": "Rebecca Bernhardt" },
+        { "name": "Andrea Close" },
+        { "name": "Talia Housik" },
+        { "name": "Michelle Kelley" },
+        { "name": "Steve Levick" },
+        { "name": "Gabrielle Mazero" },
+        { "name": "Chloe Michaelidis" },
+        { "name": "Amy Munro" },
+        { "name": "Zach Wolens" }
+      ]
+    },
+    {
+      "name": "Legal Filings Researchers",
+      "members": [
+        { "name": "Rebecca Fordon", "roles": ["Health is Justice Lead"] },
+        { "name": "Ben Woolley", "roles": ["Immigration Filings Lead"] },
+        { "name": "Joanne Choi", "roles": ["Former Immigration Filings Lead"] },
+        {
+          "name": "Callen Lowell",
+          "roles": ["Former Immigration Filings Lead"]
+        },
+        { "name": "Bradley Anderton" },
+        { "name": "William Applegate" },
+        { "name": "Jaz Buckley" },
+        { "name": "Michal David" },
+        { "name": "Fritzgi Dessources" },
+        { "name": "Brooke Diulio" },
+        { "name": "Camille Halley" },
+        { "name": "Talia Housik" },
+        { "name": "Rachel Hudson" },
+        { "name": "Natalie Kaufman" },
+        { "name": "Cooper Mayne" },
+        { "name": "Nicole Miller" },
+        { "name": "Monse Reyes" },
+        { "name": "Chloe Smith" }
+      ]
+    },
+    {
+      "name": "Youth Legal Filings & Detention Researchers",
+      "members": [
+        { "name": "Naila Segule", "roles": ["Youth Team Lead"] },
+        { "name": "Ashwini Velchamy", "roles": ["Youth Team Lead"] },
+        { "name": "Yasmine Tager", "roles": ["Former Youth Team Lead"] },
+        { "name": "Alex Bakes" },
+        { "name": "Jessica Behmanesh" },
+        { "name": "Ritika Bhattacharya" },
+        { "name": "Cooper Bobbitt" },
+        { "name": "Caroline Cummings" },
+        { "name": "Zach Dai" },
+        { "name": "Mariam Diallo" },
+        { "name": "Ian Duke" },
+        { "name": "Caitlyn Handy" },
+        { "name": "Jess Johnson" },
+        { "name": "Anya Karumanchi" },
+        { "name": "Caroline Kelley" },
+        { "name": "Erik Kruse" },
+        { "name": "Sophie Kupetz" },
+        { "name": "Lydia Lopez" },
+        { "name": "Natalie Lozovsky" },
+        { "name": "Nehemiah MacDonald" },
+        { "name": "Judith Murungi" },
+        { "name": "Alia Nahra" },
+        { "name": "Olivia Osborne" },
+        { "name": "Dhruv Patel" },
+        { "name": "Krisha Patel" },
+        { "name": "Liz Soyemi" },
+        { "name": "Elif Yücel" }
+      ]
+    },
+    {
+      "name": "Investigative Researchers",
+      "members": [
+        { "name": "Rachel Berman" },
+        { "name": "Devin Bernardin" },
+        { "name": "Ian Duke" },
+        { "name": "Catherine Kang" },
+        { "name": "Rebecca Kellum" },
+        { "name": "Laure Kohne" },
+        { "name": "Rebecca Rifkind-Brown" },
+        { "name": "Julia Rowell" }
+      ]
+    },
+    {
+      "name": "Releases Researchers",
+      "members": [
+        { "name": "Maddy deLone", "roles": ["Releases Data Lead"] },
+        {
+          "name": "Andrés Fernández Carrasco",
+          "roles": ["Releases Data Lead"]
+        },
+        { "name": "Ananya Prakash", "roles": ["Releases Data Lead"] },
+        { "name": "Kyle Allen" },
+        { "name": "Uma Arunachalam" },
+        { "name": "Julia DiMartino" },
+        { "name": "Ale Fernandez Carrasco" },
+        { "name": "Louisa Fusco" },
+        { "name": "Ivan Guan" },
+        { "name": "Alie Herbst" },
+        { "name": "John Holzheimer" },
+        { "name": "Em Lassen" },
+        { "name": "Austin Machado" },
+        { "name": "Lillian Rand" },
+        { "name": "Ian Stringham" },
+        { "name": "Rachel Strodel" },
+        { "name": "Jana Sun" },
+        { "name": "Heather Warren" },
+        { "name": "Baylee Wechsler" },
+        { "name": "Celeste Winston" },
+        { "name": "Kari Zimmerman" }
+      ]
+    },
+    {
+      "name": "Public Records Researchers",
+      "members": [
+        { "name": "Max Belasco" },
+        { "name": "Amanda Carlin" },
+        { "name": "Cameron Chapman-Pinto" },
+        { "name": "Myles Crandall" },
+        { "name": "Kelly Halverson" },
+        { "name": "Pierre Khoury" },
+        { "name": "Brian Louis" },
+        { "name": "Kayla Malone" },
+        { "name": "Nicole Miller" },
+        { "name": "Eva Nofri" },
+        { "name": "Lisa Patel" },
+        { "name": "Aris Prince" },
+        { "name": "Olivia Scheyer" },
+        { "name": "Zhening Zhang" }
+      ]
+    },
+    {
+      "name": "Grassroots and Community Organizing Researchers",
+      "members": [
+        { "name": "Jordan Palmer", "roles": ["Grassroots Data Lead"] },
+        { "name": "Cecilia Bobbitt", "roles": ["Grassroots Data Lead"] },
+        { "name": "Fátima Avellán" },
+        { "name": "Taylor Fox" },
+        { "name": "Benito Guijarro" },
+        { "name": "Samuel LeBarron" },
+        { "name": "Jordan Nagai" },
+        { "name": "Dhruv Patel" },
+        { "name": "Alejandro Santana" },
+        { "name": "Jessica Vived" },
+        { "name": "Josephine Wang" },
+        { "name": "Evie Zavidow" },
+        { "name": "Sara Zukerman" }
+      ]
+    },
+    {
+      "name": "Immigration Detention Researchers",
+      "members": [
+        { "name": "Theresa Cheng", "roles": ["Immigration Data Lead"] },
+        { "name": "Ishan Nagpal", "roles": ["Immigration Data Lead"] },
+        { "name": "Razzi Abuissa" },
+        { "name": "Minali Aggarwal" },
+        { "name": "Andrea Allen" },
+        { "name": "Wilner Alvarez" },
+        { "name": "Sandeep Bansal" },
+        { "name": "Molly Calhoon" },
+        { "name": "Dhruv Chakraborty" },
+        { "name": "Will Chandler" },
+        { "name": "Samantha Chung" },
+        { "name": "Mercedes Davis" },
+        { "name": "Addie Dickens" },
+        { "name": "Siew Fen Eow" },
+        { "name": "Kevin Fan" },
+        { "name": "Cyrin Anne Geluz" },
+        { "name": "Olivia Gemarro" },
+        { "name": "Jade Harvey" },
+        { "name": "Michael Huynh" },
+        { "name": "Sukhmeen Kahlon" },
+        { "name": "Nick Kahmann" },
+        { "name": "Rebecca Kellum" },
+        { "name": "Ben Laufer" },
+        { "name": "Mikaela Lavandero" },
+        { "name": "Charles Dudley Lee" },
+        { "name": "Kevin Lee" },
+        { "name": "Lyndon Liang" },
+        { "name": "Jeanette Lin" },
+        { "name": "Vincent Liu" },
+        { "name": "William McKenna" },
+        { "name": "Shelby McNabb" },
+        { "name": "Bailey Miller" },
+        { "name": "Nicole Miller" },
+        { "name": "Michael Quinan" },
+        { "name": "Anjali Rajaratnam" },
+        { "name": "Breanna Ramos" },
+        { "name": "Rebecca Rifkind-Brown" },
+        { "name": "Tyler Rivera" },
+        { "name": "Lauren Rosenfeld" },
+        { "name": "Lucie Rosenthal" },
+        { "name": "Anamely Salgado" },
+        { "name": "Nina Sedlacek" },
+        { "name": "Naila Segule" },
+        { "name": "Khadija Shalbi" },
+        { "name": "Isha Sharma" },
+        { "name": "Samantha Step" },
+        { "name": "Ananya Subrahmanian" },
+        { "name": "Shivani Sundaram" },
+        { "name": "Ashwin Thomas" },
+        { "name": "Emily Wannamaker" },
+        { "name": "Izzy Wiesenthal" },
+        { "name": "Ivan Zeavin-Moss" },
+        { "name": "Jennifer Zhang" }
+      ]
+    },
+    {
+      "name": "Oral Historians",
+      "members": [
+        { "name": "Monique Cardona" },
+        { "name": "Lily Johnson" },
+        { "name": "Bailey Miller" },
+        { "name": "AK Shee" },
+        { "name": "Ali Stack" },
+        { "name": "Olivia Zacks" }
+      ]
+    },
+    {
+      "name": "Social Media Specialists",
+      "members": [
+        { "name": "Haller Jackson" },
+        { "name": "Bailey Miller" },
+        { "name": "Laura A Peña Marichal" },
+        { "name": "Lucie Rosenthal" },
+        { "name": "Emily Wannamaker" },
+        { "name": "Madison Wells" }
+      ]
+    }
+  ]
+}

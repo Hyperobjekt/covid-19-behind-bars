@@ -27,15 +27,16 @@
     ]
   },
   "vaccineTable": {
-    "title": "COVID-19 Vaccines in Carceral Facilities",
-    "subtitle": "This table reflects data publicly reported by correctional agencies about the administration of COVID-19 vaccines to incarcerated people and staff in their facilities. Agencies differ in the number and definitions of variables they report about vaccination, but, to the best of our knowledge, the numbers reported here refer to the number of people who have received <u>at least</u> one dose of a vaccine. Some individuals may have also received a second dose, though it is not always clear from the data. We will add jurisdictions to this table as more data become available.",
+    "title": "COVID-19 Vaccines in State and Federal Prisons ",
+    "subtitle": "This table reflects data publicly reported by state and federal correctional agencies about the administration of COVID-19 vaccines to incarcerated people and staff in their facilities. The data reported here generally refer to people who have received <u>at least one dose</u> of a vaccine. There are some exceptions, noted with a flag, when agencies report only the number of people who have completed their vaccination schedules, and not the number of people partially vaccinated. Staff are generally not required to report their vaccination status to their employers, so the total numbers of staff who are vaccinated may be higher. \n",
     "columnHeaders": {
       "jurisdiction": "Jurisdiction",
-      "residents_rate": "Vaccine Rate for Incarcerated People",
-      "staff_rate": "Vaccine Rate for Staff"
+      "residents_rate": "Vaccination Rate for Incarcerated People",
+      "staff_rate": "Vaccination Rate for Staff"
     },
     "note": [
-      "Vaccination totals refer to the number of people who have received at least one dose of vaccine. The population value used to calculate the vaccination rate for incarcerated people is from January 2021, and the population value used for staff is the most recent data available. Many of the staff population denominators come from the Marshall Project’s data."
+      "Rates for incarcerated people are calculated using a population denominator from June 2021, and rates for staff are based on the most recent population data available. Many of the staff population values come from data collected by <a href=\"https://github.com/themarshallproject/COVID_prison_data\">The Marshall Project</a>.",
+      "We collect additional data on vaccine administration; these variables are presented in our full dataset on <a href=\"https://github.com/uclalawcovid19behindbars/data\">GitHub</a>. These include state-level data on the number of incarcerated people and staff who are fully vaccinated, facility-level data on the number of staff and incarcerated people who are vaccinated, and data from several county jail systems. <a href=\"http://uclacovidbehindbars.org/blog/vaccinedata\">Click here</a> to learn more information about the vaccine data we collect."
     ],
     "flag_note": [
       {
@@ -47,6 +48,10 @@
         "text": "Maine only reports the number of people who have completed their vaccination schedules. The number of people who have received at least one dose may be higher."
       },
       {
+        "entity": "arizona",
+        "text": "Arizona only reports the number of people who have completed their vaccination schedules. The number of people who have received at least one dose may be higher."
+      },
+      {
         "entity": "south carolina",
         "text": "South Carolina only reports the number of people who have completed their vaccination schedules. The number of people who have received at least one dose may be higher."
       }
@@ -55,15 +60,19 @@
   "sponsors": {
     "title": "Our generous supporters include:",
     "logos": [
-      { "image": "/images/cdc-logo.svg", "link": "", "alt": "CDC Logo" },
+      {
+        "image": "/images/cdc-logo.svg",
+        "link": "/",
+        "alt": "CDC Logo"
+      },
       {
         "image": "/images/vital-projects-fund-logo.svg",
-        "link": "",
+        "link": "/",
         "alt": "Vital Projects Fund Logo"
       },
       {
         "image": "/images/arnold-ventures-logo.svg",
-        "link": "",
+        "link": "/",
         "alt": "Arnold Ventures Logo"
       }
     ]

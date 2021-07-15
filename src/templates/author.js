@@ -51,7 +51,6 @@ const PageTemplate = (props) => {
           {body && <MDXRenderer>{body}</MDXRenderer>}
         </Box>
 
-        <Typography variant="h2">Posts</Typography>
         <List>
           {posts &&
             posts.map(({ name, path, date }) => (

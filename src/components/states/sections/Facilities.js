@@ -1,10 +1,7 @@
 import React from "react";
-import { GROUPS } from "../../../common/constants";
 import FacilitiesTable from "../FacilitiesTable";
 import MetricSelectionTitle from "../../controls/MetricSelectionTitle";
-import shallow from "zustand/shallow";
 import useStatesStore from "../useStatesStore";
-import { useActiveMetric, useFacilitiesData } from "../../../common/hooks";
 import StepWrapper from "./../StepWrapper";
 
 const Facilities = ({ id, lang, isFederal, ...props }) => {

@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Typography, withStyles } from "@material-ui/core";
+import { Box, Typography, withStyles } from "@material-ui/core";
 import InfoIcon from "../common/icons/InfoIcon";
 import { getLang } from "../common/utils/i18n";
 import Modal from "./modal/Modal";
@@ -14,6 +14,11 @@ export const styles = (theme) => ({
     marginTop: theme.spacing(2),
     fontSize: theme.typography.pxToRem(14),
   },
+  content: {
+    "& .MuiTypography-root + .MuiTypography-root": {
+      marginTop: theme.spacing(2.5),
+    },
+  },
 });
 
 const getNumberPrefix = (num) =>
@@ -22,7 +27,7 @@ const getNumberPrefix = (num) =>
 const NotesModal = ({
   classes,
   className,
-  disableNumbering,
+  disableNumbering = true,
   notes,
   ...props
 }) => {
@@ -31,7 +36,7 @@ const NotesModal = ({
       classes={{ button: classes.button }}
       title={getLang("notes_dialog_title")}
       content={
-        <>
+        <Box className={classes.content}>
           {notes.map((note, i) => (
             <Typography
               key={note}
@@ -42,7 +47,7 @@ const NotesModal = ({
               }}
             />
           ))}
-        </>
+        </Box>
       }
       {...props}
     >

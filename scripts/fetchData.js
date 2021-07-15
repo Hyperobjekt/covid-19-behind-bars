@@ -296,7 +296,9 @@ const grassrootsMap = {
   state: ["State", "string", roughMatch],
   county: ["County", "string", exactMatch],
   organization: ["Organization", "string", exactMatch],
-  type: ["Organizing Effort", "string", exactMatch],
+  type1: ["Organizing Effort Type 1", "string", exactMatch],
+  type2: ["Organizing Effort Type 2", "string", exactMatch],
+  type3: ["Organizing Effort Type 3", "string", exactMatch],
   internal_effort: ["Internal Organizing Effort", "string", roughMatch],
   external_effort: ["External Organizing Effort", "string", roughMatch],
   sanitary: ["Effort for Improved Sanitary Conditions", "string", roughMatch],
@@ -314,7 +316,7 @@ const grassrootsMap = {
 
 const grassrootsParser = (row) => parseMap(row, grassrootsMap);
 
-const valueToBool = (value) => value.trim().toLowerCase() === "x";
+const valueToBool = (value) => value.trim().toLowerCase() === "yes";
 
 exports.getGrassroots = () =>
   getData(grassrootsCsv, grassrootsParser).then((data) => {
@@ -332,6 +334,7 @@ exports.getGrassroots = () =>
           obj[curr] = valueToBool(d[curr]);
           return obj;
         }, {}),
+        type: [d.type1, d.type2, d.type3].filter(Boolean).join(", "),
       };
     });
     return result;

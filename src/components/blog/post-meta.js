@@ -1,13 +1,24 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
-import { Link } from "gatsby";
+import { Typography, withStyles } from "@material-ui/core";
+import { Link } from "gatsby-theme-material-ui";
 import slugify from "slugify";
 import moment from "moment";
 
-const BlogMeta = ({ author = [], date, ...props }) => {
+const Wrapper = withStyles((theme) => ({
+  // different underline for blog author links (per mockup)
+  root: {
+    "& .MuiLink-underlineHover": {
+      textDecorationColor: `rgba(85, 85, 38, 0.3)`,
+      "&:hover": { textDecorationColor: theme.palette.secondary.main },
+    },
+    marginBottom: theme.spacing(3),
+  },
+}))(Typography);
+
+const PostMeta = ({ author = [], date, ...props }) => {
   const formattedDate = moment(date).format("MMMM Do, YYYY");
   return (
-    <Typography gutterBottom variant="body2" {...props}>
+    <Wrapper variant="body2" {...props}>
       {formattedDate}
       {author && author.length > 0 && " • "}
       {author &&
@@ -19,10 +30,10 @@ const BlogMeta = ({ author = [], date, ...props }) => {
             {author.length >= 2 && i === author.length - 2 && " and "}
           </React.Fragment>
         ))}
-    </Typography>
+    </Wrapper>
   );
 };
 
-BlogMeta.propTypes = {};
+PostMeta.propTypes = {};
 
-export default BlogMeta;
+export default PostMeta;

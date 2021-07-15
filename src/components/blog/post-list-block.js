@@ -2,7 +2,7 @@ import { withStyles } from "@material-ui/core";
 import clsx from "clsx";
 import React from "react";
 import { subtitleTypography } from "../../gatsby-theme-hypercore/theme";
-import BlogPost from "./blog-post";
+import PostList from "./post-list";
 
 const styles = (theme) => ({
   root: {
@@ -22,15 +22,13 @@ const styles = (theme) => ({
   },
 });
 
-const BlogPosts = ({ classes, className, title, posts, ...props }) => {
+const PostListBlock = ({ classes, className, title, posts, ...props }) => {
   return (
     <div className={clsx(classes.root, className)} {...props}>
       <h2 className={classes.title}>{title}</h2>
-      {posts.map((p, idx) => (
-        <BlogPost post={p} key={p.frontmatter.path} />
-      ))}
+      <PostList posts={posts} />
     </div>
   );
 };
 
-export default withStyles(styles)(BlogPosts);
+export default withStyles(styles)(PostListBlock);

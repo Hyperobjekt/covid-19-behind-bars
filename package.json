@@ -22,6 +22,7 @@
     "gatsby-plugin-mdx": "^2.4.0",
     "gatsby-plugin-meta-redirect": "^1.1.1",
     "gatsby-plugin-netlify-cms": "^5.8.0",
+    "gatsby-plugin-remove-serviceworker": "^1.0.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^3.4.0",
     "gatsby-theme-hypersite": "1.1.1",

@@ -4,7 +4,8 @@ import { Typography, withStyles } from "@material-ui/core";
 import { Link } from "gatsby-theme-material-ui";
 import { serifTypography } from "../../gatsby-theme-hypercore/theme";
 import ReadLink from "./read-link";
-import BlogMeta from "./blog-meta";
+import PostMeta from "./post-meta";
+import { graphql } from "gatsby";
 
 const styles = (theme) => ({
   root: {
@@ -41,8 +42,8 @@ const styles = (theme) => ({
     "&.MuiLink-root": {
       textDecoration: "none",
       "&:hover": {
-        textDecoration: "underline",
-        textDecorationColor: theme.palette.secondary.main,
+        textDecoration: "none",
+        opacity: 0.7,
       },
     },
   },
@@ -76,10 +77,20 @@ const styles = (theme) => ({
   },
 });
 
-const BlogPost = ({ classes, className, post, isFeatured, ...props }) => {
-  const { date, name: title, description, path, meta } = post.frontmatter;
-  const url = path || post.slug;
-  const absoluteUrl = url[0] === "/" ? url : "/" + url;
+const Post = ({
+  classes,
+  className,
+  date,
+  title,
+  description,
+  url,
+  author,
+  isFeatured,
+  ...props
+}) => {
+  // const { date, name: title, description, path, meta } = post.frontmatter;
+  // const url = path || post.slug;
+  // const absoluteUrl = url[0] === "/" ? url : "/" + url;
   return (
     <div
       className={clsx(
@@ -89,21 +100,44 @@ const BlogPost = ({ classes, className, post, isFeatured, ...props }) => {
       )}
       {...props}
     >
-      <BlogMeta date={date} author={meta.author} />
+      <PostMeta date={date} author={author} />
       <div className={classes.titleWrapper}>
         <Typography variant="h3" component="h3">
-          <Link className={classes.title} to={absoluteUrl}>
+          <Link className={classes.title} to={url}>
             {title}
           </Link>
         </Typography>
         <Typography className={classes.description}>{description}</Typography>
       </div>
 
-      <ReadLink aria-hidden="true" to={absoluteUrl}>
+      <ReadLink aria-hidden="true" to={url}>
         Read more
       </ReadLink>
     </div>
   );
 };
 
-export default withStyles(styles)(BlogPost);
+export default withStyles(styles)(Post);
+
+export const query = graphql`
+  fragment BlogPostTeaser on Mdx {
+    id
+    frontmatter {
+      meta {
+        title
+        description
+        keywords
+        image {
+          childImageSharp {
+            gatsbyImageData(
+              transformOptions: { fit: COVER, cropFocus: CENTER }
+              width: 1200
+              height: 630
+            )
+          }
+        }
+        isBlogPost
+      }
+    }
+  }
+`;

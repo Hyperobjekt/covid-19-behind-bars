@@ -28,6 +28,7 @@ export const styles = (theme) => ({
     marginBottom: theme.spacing(1),
   },
   archive: {
+    textDecorationColor: `rgba(85, 85, 38, 0.3)`,
     "& img": {
       paddingLeft: ".2rem",
     },

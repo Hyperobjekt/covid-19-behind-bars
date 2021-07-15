@@ -116,19 +116,6 @@
       "facility_level_alt": "reported at the facility level"
     }
   },
-  "filings": {
-    "id": "filings",
-    "title": "Legal Filings and Court Orders Related to COVID",
-    "link": "Filings & Court Orders",
-    "body": "Our project collaborates with Bronx Defenders, Columbia Law School’s Center for Institutional and Social Change, and Zealous to collect legal documents from around the country related to COVID-19 and incarceration. Together, we then organize and code them into the jointly managed <a href='https://healthisjustice.org/litigation-hub/login' rel='noreferrer' target='_blank'>Health is Justice litigation hub</a> for public defenders, litigators, and other advocates. The majority of the legal documents in the Health is Justice litigation hub are federal court opinions, but we are expanding to state legal filings, declarations, and exhibits.<br /><br />In addition to the Health is Justice litigation hub, our project also manages additional data self-reported by advocates regarding COVID-19-related legal filings involving <a href='https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=1832796231' rel='noreferrer' target='_blank'>incarcerated youth</a> and <a href='https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=22612814' rel='noreferrer' target='_blank'>individuals in immigration detention</a>.<br><br>For more COVID-19-related legal filings, please visit the University of Michigan Law School’s <a href='https://clearinghouse.net/results.php?searchSpecialCollection=62'>Civil Rights Litigation Clearinghouse, COVID-19 Special Collection</a>.",
-    "visual": {
-      "courtCount": "number of courts",
-      "granted": "compassionate releases granted",
-      "facilityCount": "number of facilities",
-      "total": "filings coded by our team",
-      "unavailable": "No filings data available."
-    }
-  },
   "releases": {
     "id": "releases",
     "title": "Prison and Jail Releases Related to COVID",
@@ -138,11 +125,11 @@
       "jurisdiction": "Jurisdiction",
       "facility": "Facility/facilities",
       "authority": "Authorizing agent(s)",
-      "date": "Date*",
-      "releases": "Overall population reduction/ total # of releases**",
-      "population": "Population prior to releases***",
+      "date": "Date",
+      "releases": "Overall population reduction/ total # of releases",
+      "population": "Population prior to releases",
       "proportion": "Releases as percentage of population",
-      "capacity": "Known facility capacity****",
+      "capacity": "Known facility capacity",
       "details": "Release details",
       "source": "Source",
       "detailTypeMap": {
@@ -156,10 +143,9 @@
     },
     "notes": [
       "For the most part, we only include release efforts where the data source includes some sort of programmatic description of who is being released (e.g., people with technical violations of parole, people charged with non-violent crimes, etc.). You can find our full prison releases dataset <a href=\"https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=845601985\">here</a> and jail releases dataset <a href=\"https://docs.google.com/spreadsheets/d/1X6uJkXXS-O6eePLxw2e4JeRtM41uPZ2eRcOA_HkPVTk/edit#gid=1678228533\">here</a>.",
-      "*date of releases, if available. Otherwise, date on which releases first were reported.",
-      "**total number of releases reported when available. Otherwise, the change in population to which the releases contributed is reported.",
-      "***last reported inmate population before releases were realized",
-      "****capacity is often determined differently across jurisdictions and some facilities often report more than one capacity number. In these cases, we report the higher of the figures available."
+      "Date corresponds to the date of releases, if available. Otherwise, this refers to the date on which releases first were reported.",
+      "Population reduction refers to the total number of releases reported when available. Otherwise, this refers to the change in population to which the releases contributed is reported.",
+      "Population prior to releases refers to the last reported inmate population before releases were realized. Capacity is often determined differently across jurisdictions, and some facilities often report more than one capacity number. In these cases, we report the higher of the figures available."
     ]
   },
   "grassroots": {

@@ -13,10 +13,6 @@ import { Step, Scrollama } from "@hyperobjekt/react-scrollama";
 import {
   ResidentsSummary,
   Facilities,
-  Filings,
-  // Grassroots,
-  // Immigration,
-  // Releases,
   Scorecard,
   ReleasesTable,
   GrassrootsTable,
@@ -128,7 +124,7 @@ const SECTION_COMPONENTS = {
   residents: ResidentsSummary,
   staff: StaffSummary,
   facilities: Facilities,
-  filings: Filings,
+  // filings: Filings,
   // releases: Releases,
   // immigration: Immigration,
   // grassroots: Grassroots,
@@ -183,7 +179,7 @@ const StateTemplate = ({ pageContext, data }) => {
 
   const scrollSectionKeys = ["residents", "staff", "facilities"];
   const scrollSections = scrollSectionKeys.map((key) => content[key]);
-  const fullWidthKeys = ["scorecard", "releases", "grassroots", "filings"];
+  const fullWidthKeys = ["scorecard", "releases", "grassroots"];
   const fullWidthSections = fullWidthKeys.map((key) => content[key]);
   return (
     <Layout title={state}>

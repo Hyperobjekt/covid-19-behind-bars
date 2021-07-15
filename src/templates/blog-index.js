@@ -2,6 +2,9 @@ import React from "react";
 import PageTemplate from "gatsby-theme-hypercore/src/templates/page";
 import { graphql } from "gatsby";
 import { createStyles, makeStyles } from "@material-ui/core";
+import { postDataToProps } from "../components/blog";
+
+/** Global page styles */
 const useStyles = makeStyles((theme) =>
   createStyles({
     "@global": {
@@ -20,9 +23,15 @@ export default function BlogIndexTemplate(props) {
       return node;
     }) || [];
   const featuredPost = postsData.find((p) => p.frontmatter?.featured) || {};
-  const otherPosts = postsData.filter((p) => p.id !== featuredPost.id);
+  const otherPosts = postsData
+    .filter((p) => p.id !== featuredPost.id)
+    .map(postDataToProps);
   return (
-    <PageTemplate featuredPost={featuredPost} posts={otherPosts} {...props} />
+    <PageTemplate
+      featuredPost={postDataToProps(featuredPost)}
+      posts={otherPosts}
+      {...props}
+    />
   );
 }
 

@@ -2,7 +2,7 @@ import React from "react";
 import Block from "gatsby-theme-hypersite/src/main/block";
 import { Typography, withStyles } from "@material-ui/core";
 import { compactTitleTypography } from "../../gatsby-theme-hypercore/theme";
-import BlogMeta from "./blog-meta";
+import PostMeta from "./post-meta";
 
 const styles = (theme) => ({
   hero: {
@@ -30,11 +30,11 @@ const styles = (theme) => ({
   },
 });
 
-const Hero = ({ classes, author, date, title, ...props }) => {
+const PostHeroBlock = ({ classes, author, date, title, ...props }) => {
   return (
     <Block>
       <div className={classes.hero} {...props}>
-        <BlogMeta author={author} date={date} />
+        <PostMeta author={author} date={date} />
         <Typography variant="h2" component="h2" className={classes.postTitle}>
           {title}
         </Typography>
@@ -43,4 +43,4 @@ const Hero = ({ classes, author, date, title, ...props }) => {
   );
 };
 
-export default withStyles(styles)(Hero);
+export default withStyles(styles)(PostHeroBlock);

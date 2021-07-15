@@ -1,27 +1,8 @@
 import React from "react";
 import { withStyles } from "@material-ui/core";
-import {
-  compactTitleTypography,
-  subtitleTypography,
-} from "../../gatsby-theme-hypercore/theme";
+import { subtitleTypography } from "../../gatsby-theme-hypercore/theme";
 import clsx from "clsx";
-import BlogPost from "./blog-post";
-
-const FeaturedPost = withStyles((theme) => ({
-  title: {
-    ...compactTitleTypography,
-    color: theme.palette.text.secondary,
-    fontSize: theme.typography.pxToRem(48),
-    lineHeight: 1.1,
-    maxWidth: "10em",
-    "& a": {
-      color: theme.palette.text.secondary,
-    },
-    [theme.breakpoints.up("sm")]: {
-      fontSize: theme.typography.pxToRem(62),
-    },
-  },
-}))(BlogPost);
+import FeaturedPost from "./featured-post";
 
 const styles = (theme) => ({
   root: {
@@ -44,13 +25,16 @@ const styles = (theme) => ({
   },
 });
 
-function BlogFeatured({ classes, className, title, post }) {
+/**
+ * Featured post section on the index
+ */
+function FeaturedBlock({ classes, className, title, post }) {
   return (
     <div className={clsx(classes.root, className)}>
       <h2 className={classes.title}>{title}</h2>
-      <FeaturedPost post={post} isFeatured={true} />
+      <FeaturedPost {...post} isFeatured={true} />
     </div>
   );
 }
 
-export default withStyles(styles)(BlogFeatured);
+export default withStyles(styles)(FeaturedBlock);
